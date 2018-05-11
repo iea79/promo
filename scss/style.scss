@@ -187,6 +187,16 @@ h3 {
 			font-weight: 600;
 		}
 	}
+	&_reset {
+		list-style: none;
+		margin-top: 10px;
+		li {
+			&:before {
+				content: '';
+				display: none;
+			}
+		}
+	}
 }
 
 .dohod {
@@ -207,6 +217,13 @@ h3 {
 .sales {
 	background: url('../img/welcome.png') no-repeat top 33% right -5px;
 	background-size: 27%;
+	.red {
+		color: #f00;
+	}
+	strong {
+		color: #f00;
+		font-size: 30px;
+	}
 }
 
 .programm {
@@ -233,6 +250,40 @@ h3 {
 		}
 		> div {
 			padding-left: 0;
+		}
+	}
+}
+
+.gray {
+	background-color: #eee;
+}
+
+.old {
+	text-decoration: line-through;
+	font-size: 22px;
+}
+
+.teach {
+	.grid {
+		margin-left: 0;
+		max-width: 1180px;
+		margin: auto;
+		margin-top: 120px;
+		line-height: 1.4;
+		> div {
+			padding-left: 0;
+			margin-bottom: 0;
+			padding: 45px;
+			font-size: 20px;
+			&:nth-child(n+4) {
+				border-top: 1px solid #000;
+			}
+			&:nth-child(n+2) {
+				border-left: 1px solid #000;
+			}
+			&:nth-child(4n+4) {
+				border-left: none;
+			}
 		}
 	}
 }

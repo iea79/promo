@@ -866,6 +866,12 @@ h3 {
       font-size: 1.1em;
       margin-right: 10px;
       font-weight: 600; }
+  .list_reset {
+    list-style: none;
+    margin-top: 10px; }
+    .list_reset li:before {
+      content: '';
+      display: none; }
 
 .dohod img {
   border: 5px solid #000; }
@@ -879,6 +885,11 @@ h3 {
 .sales {
   background: url("../img/welcome.png") no-repeat top 33% right -5px;
   background-size: 27%; }
+  .sales .red {
+    color: #f00; }
+  .sales strong {
+    color: #f00;
+    font-size: 30px; }
 
 .programm {
   background: url("../img/questions.png") no-repeat top center;
@@ -896,6 +907,31 @@ h3 {
     text-align: center; }
   .onlineservices .grid > div {
     padding-left: 0; }
+
+.gray {
+  background-color: #eee; }
+
+.old {
+  text-decoration: line-through;
+  font-size: 22px; }
+
+.teach .grid {
+  margin-left: 0;
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 120px;
+  line-height: 1.4; }
+  .teach .grid > div {
+    padding-left: 0;
+    margin-bottom: 0;
+    padding: 45px;
+    font-size: 20px; }
+    .teach .grid > div:nth-child(n+4) {
+      border-top: 1px solid #000; }
+    .teach .grid > div:nth-child(n+2) {
+      border-left: 1px solid #000; }
+    .teach .grid > div:nth-child(4n+4) {
+      border-left: none; }
 
 /* Footer
  ----------------------------------------------------------------------------- */
